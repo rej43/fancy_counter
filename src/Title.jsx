@@ -3,10 +3,10 @@ export default function Title({ locked }) {
     <h1 className="title">
       {locked ? (
         <span>
-          Limit Reached! Buy <b>Pro</b> Version
+          Limit Reached! <b>Buy Pro Version</b>
         </span>
       ) : (
-        " Fancy Counter"
+        "Fancy Counter"
       )}
     </h1>
   );
