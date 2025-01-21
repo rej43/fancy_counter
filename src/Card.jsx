@@ -10,7 +10,12 @@ export default function Card() {
   useEffect(() => {
     const handleKeydown = (event) => {
       if (event.code === "Space") {
-        setCount(count + 1);
+        const newCount = count + 1;
+        if (newCount > 5) {
+          setCount(5);
+          return;
+        }
+        setCount(newCount);
       }
     };
     window.addEventListener("keydown", handleKeydown);
